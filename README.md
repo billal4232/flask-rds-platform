@@ -1,12 +1,10 @@
-
-```markdown
 # Flask RDS Platform
 
 A production-style Flask web application deployed on AWS, featuring a private RDS PostgreSQL database, Application Load Balancer with HTTPS, SSM Parameter Store for secrets management, and fully automated infrastructure via Terraform.
 
 **Live URL:** https://app.limonlab.online
 
----
+
 
 ## Architecture
 

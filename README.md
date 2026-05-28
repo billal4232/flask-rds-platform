@@ -10,7 +10,7 @@ A production-style Flask web application deployed on AWS, featuring a private RD
 
 ## Architecture
 
-![Architecture Diagram](docs/flask_rds_architecture.svg)
+![Architecture Diagram](docs/architecture.png)
 
 ### Traffic Flow
 ```

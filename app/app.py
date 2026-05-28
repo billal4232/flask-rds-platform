@@ -29,6 +29,10 @@ def create_table():
     cur.close()
     conn.close()
 
+@app.route('/')
+def home():
+    return jsonify({'message': 'Flask RDS Platform', 'status': 'running'}), 200
+
 @app.route('/health')
 def health():
     return jsonify({'status': 'healthy'}), 200

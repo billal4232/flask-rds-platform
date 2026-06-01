@@ -58,7 +58,7 @@ def check_api_key():
 
 @app.route('/')
 def home():
-    return jsonify({'message': 'Flask RDS Platform V2', 'status': 'running'}), 200
+    return jsonify({'message': 'Checking if it works without pressing action button on github', 'status': 'running'}), 200
 
 @app.route('/health')
 def health():

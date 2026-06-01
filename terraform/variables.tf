@@ -73,3 +73,8 @@ variable "subdomain" {
   type        = string
   default     = "app.limonlab.online"
 }
+variable "api_key" {
+  description = "API key for Flask authentication"
+  type        = string
+  sensitive   = true
+}

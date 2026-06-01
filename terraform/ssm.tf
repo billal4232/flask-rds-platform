@@ -47,3 +47,12 @@ resource "aws_ssm_parameter" "db_password" {
     Name = "${var.project_name}-db_password"
   }
 }
+resource "aws_ssm_parameter" "api_key" {
+  name  = "/${var.project_name}/api_key"
+  type  = "SecureString"
+  value = var.api_key
+
+  tags = {
+    Name = "${var.project_name}-api_key"
+  }
+}

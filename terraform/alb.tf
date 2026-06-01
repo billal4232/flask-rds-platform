@@ -12,7 +12,7 @@ resource "aws_lb" "main" {
 resource "aws_lb_target_group" "alb_tg" {
   name        = "tg-for-alb"
   target_type = "instance"
-  port        = 80
+  port        = 5000
   protocol    = "HTTP"
   vpc_id      = aws_vpc.main.id
 
@@ -27,7 +27,7 @@ resource "aws_lb_target_group" "alb_tg" {
 resource "aws_lb_target_group_attachment" "tg_attachment" {
   target_group_arn = aws_lb_target_group.alb_tg.arn
   target_id        = aws_instance.main.id 
-  port             = 80
+  port             = 5000
 }
 
 resource "aws_lb_listener" "http" {
